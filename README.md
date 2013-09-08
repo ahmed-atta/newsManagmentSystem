@@ -1,4 +1,4 @@
-newsManagmentSystem
+News Managment System
 ===================
 
-Simple application for managing news
+Simple Application for Managing News
