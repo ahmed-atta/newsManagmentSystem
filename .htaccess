@@ -1,0 +1,25 @@
+RewriteEngine On
+#RewriteBase /news
+
+
+RewriteRule ^index\.html$           index.php
+RewriteRule ^news-([0-9]+)\.html$   index.php?page=news&cid=$1
+RewriteRule ^item-([0-9]+)\.html$   index.php?page=item&itemid=$1 [L]
+
+
+#RewriteRule ^news/([a-z]+)/([0-9]+)\.html$  /news.php?cid=$2
+
+
+#AuthUserFile /.htpasswd
+#AuthGroupFile /dev/null
+#AuthName "Password Protected Area"
+#AuthType Basic
+
+#<limit GET POST>
+#require valid-user
+#</limit>
+
+
+
+#RewriteRule ^p\.html$  test.php?id=123 [L]
+#RewriteRule ^(([^/]+/)*[^.]+)$ /$1.php [L]
